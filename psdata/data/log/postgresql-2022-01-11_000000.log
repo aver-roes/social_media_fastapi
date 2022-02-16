@@ -1,0 +1,8 @@
+2022-01-11 19:54:51.470 +03 [7968] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-11 19:54:51.470 +03 [9412] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-11 19:55:15.500 +03 [14472] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-11 19:55:15.512 +03 [16332] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

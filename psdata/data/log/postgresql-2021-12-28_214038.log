@@ -1,0 +1,124 @@
+2021-12-28 21:40:38.512 +03 [952] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-28 21:40:38.524 +03 [952] LOG:  listening on IPv6 address "::", port 5432
+2021-12-28 21:40:38.524 +03 [952] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-28 21:40:38.975 +03 [5164] LOG:  database system was shut down at 2021-12-28 21:39:14 +03
+2021-12-28 21:40:39.508 +03 [952] LOG:  database system is ready to accept connections
+2021-12-28 21:48:53.496 +03 [2096] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 21:49:55.712 +03 [6496] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 21:50:55.325 +03 [11124] FATAL:  failed to set up event for socket: error code 10038
+2021-12-28 21:51:07.374 +03 [7856] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 21:54:56.569 +03 [12968] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 21:59:22.699 +03 [2096] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 21:59:35.168 +03 [13908] ERROR:  relation "posts" does not exist at character 15
+2021-12-28 21:59:35.168 +03 [13908] STATEMENT:  SELECT * FROM posts
+2021-12-28 22:00:07.671 +03 [13908] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:00:54.661 +03 [14316] ERROR:  relation "posts" does not exist at character 15
+2021-12-28 22:00:54.661 +03 [14316] STATEMENT:  SELECT * FROM posts
+2021-12-28 22:00:56.164 +03 [6092] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 22:01:27.348 +03 [14316] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:01:43.610 +03 [2064] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:11:45.576 +03 [13192] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:11:45.576 +03 [13192] LOG:  unexpected EOF on client connection with an open transaction
+2021-12-28 22:15:22.040 +03 [8064] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:16:21.386 +03 [8792] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:17:15.257 +03 [1412] ERROR:  column "published" of relation "post" does not exist at character 35
+2021-12-28 22:17:15.257 +03 [1412] STATEMENT:  INSERT INTO post (title, content, published) VALUES ('usa hotels', 'trump hotel', true) RETURNING *
+2021-12-28 22:18:42.163 +03 [1412] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:20:02.309 +03 [13492] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:20:12.408 +03 [8792] ERROR:  column "published" of relation "post" does not exist at character 35
+2021-12-28 22:20:12.408 +03 [8792] STATEMENT:  INSERT INTO post (title, content, published) VALUES ('usa hotels', 'trump hotel', true) RETURNING *
+2021-12-28 22:20:14.157 +03 [8792] ERROR:  current transaction is aborted, commands ignored until end of transaction block
+2021-12-28 22:20:14.157 +03 [8792] STATEMENT:  INSERT INTO post (title, content, published) VALUES ('usa hotels', 'trump hotel', true) RETURNING *
+2021-12-28 22:20:50.588 +03 [8792] ERROR:  current transaction is aborted, commands ignored until end of transaction block
+2021-12-28 22:20:50.588 +03 [8792] STATEMENT:  SELECT * FROM post
+2021-12-28 22:20:52.138 +03 [8792] ERROR:  current transaction is aborted, commands ignored until end of transaction block
+2021-12-28 22:20:52.138 +03 [8792] STATEMENT:  SELECT * FROM post
+2021-12-28 22:21:04.851 +03 [8792] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:21:29.574 +03 [6528] ERROR:  column "published" of relation "post" does not exist at character 35
+2021-12-28 22:21:29.574 +03 [6528] STATEMENT:  INSERT INTO post (title, content, published) VALUES ('usa hotels', 'trump hotel', true) RETURNING *
+2021-12-28 22:22:42.721 +03 [6528] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:24:20.495 +03 [8668] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:31:08.830 +03 [11964] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:31:10.512 +03 [14324] FATAL:  failed to set up event for socket: error code 10038
+2021-12-28 22:33:02.960 +03 [6696] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:33:02.960 +03 [6696] LOG:  unexpected EOF on client connection with an open transaction
+2021-12-28 22:34:27.786 +03 [264] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:34:27.787 +03 [264] LOG:  unexpected EOF on client connection with an open transaction
+2021-12-28 22:40:21.770 +03 [11424] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:40:50.943 +03 [3520] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:50:16.134 +03 [12960] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:52:06.633 +03 [13668] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:52:27.041 +03 [5076] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 22:53:01.316 +03 [8172] ERROR:  syntax error at or near "content" at character 35
+2021-12-28 22:53:01.316 +03 [8172] STATEMENT:  UPDATE post SET title = 'dayanta' content = 'wenstin hotel' published = false WHERE id = '1'
+2021-12-28 22:54:38.090 +03 [8172] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:55:05.383 +03 [12216] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:55:13.368 +03 [5116] ERROR:  syntax error at or near "content" at character 35
+2021-12-28 22:55:13.368 +03 [5116] STATEMENT:  UPDATE post SET title = 'dayanta' content = 'wenstin hotel' published = false WHERE id = '1' RETURNING *
+2021-12-28 22:55:57.962 +03 [5116] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:55:59.451 +03 [8652] FATAL:  failed to set up event for socket: error code 10038
+2021-12-28 22:56:08.486 +03 [6948] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:56:21.961 +03 [3864] ERROR:  syntax error at or near "WHERE" at character 82
+2021-12-28 22:56:21.961 +03 [3864] STATEMENT:  UPDATE post SET title = 'dayanta', content = 'wenstin hotel', published = false, WHERE id = '1' RETURNING *
+2021-12-28 22:57:07.757 +03 [3864] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 22:57:14.481 +03 [10732] ERROR:  syntax error at or near "WHERE" at character 82
+2021-12-28 22:57:14.481 +03 [10732] STATEMENT:  UPDATE post SET title = 'dayanta', content = 'wenstin hotel', published = false, WHERE id = '1', RETURNING *
+2021-12-28 22:57:16.107 +03 [10732] ERROR:  syntax error at or near "WHERE" at character 82
+2021-12-28 22:57:16.107 +03 [10732] STATEMENT:  UPDATE post SET title = 'dayanta', content = 'wenstin hotel', published = false, WHERE id = '1', RETURNING *
+2021-12-28 22:59:44.030 +03 [10732] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:00:05.389 +03 [11980] ERROR:  syntax error at or near "," at character 94
+2021-12-28 23:00:05.389 +03 [11980] STATEMENT:  UPDATE post SET title = 'dayanta', content = 'wenstin hotel', published = true WHERE id = '1', RETURNING *
+2021-12-28 23:00:38.762 +03 [11980] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:06:27.266 +03 [5908] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 23:17:58.204 +03 [11972] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 23:18:48.980 +03 [9688] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:20:27.073 +03 [3612] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:20:30.730 +03 [32] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 23:30:40.204 +03 [8692] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:31:30.631 +03 [13192] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 23:31:59.321 +03 [14192] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:32:56.257 +03 [11224] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:33:20.214 +03 [7860] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:34:35.845 +03 [11396] FATAL:  failed to set up event for socket: error code 10038
+2021-12-28 23:34:36.513 +03 [13368] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:34:36.514 +03 [2976] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:34:36.514 +03 [13196] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-28 23:37:58.840 +03 [10096] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 23:52:33.868 +03 [2292] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2021-12-28 23:59:33.311 +03 [8116] LOG:  using stale statistics instead of current ones because stats collector is not responding

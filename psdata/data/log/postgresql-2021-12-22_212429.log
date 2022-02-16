@@ -1,0 +1,32 @@
+2021-12-22 21:24:29.914 +03 [7572] LOG:  starting PostgreSQL 14.1, compiled by Visual C++ build 1914, 64-bit
+2021-12-22 21:24:29.952 +03 [7572] LOG:  listening on IPv6 address "::", port 5432
+2021-12-22 21:24:29.952 +03 [7572] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2021-12-22 21:24:30.156 +03 [4420] LOG:  database system was shut down at 2021-12-22 21:24:08 +03
+2021-12-22 21:24:30.416 +03 [7572] LOG:  database system is ready to accept connections
+2021-12-22 21:57:56.074 +03 [3516] ERROR:  null value in column "price" of relation "products" violates not-null constraint
+2021-12-22 21:57:56.074 +03 [3516] DETAIL:  Failing row contains (mic, null, 4).
+2021-12-22 21:57:56.074 +03 [3516] STATEMENT:  INSERT INTO public.products (
+	name) VALUES (
+	'mic'::character varying)
+	 returning id;
+2021-12-22 21:58:10.821 +03 [3516] ERROR:  null value in column "price" of relation "products" violates not-null constraint
+2021-12-22 21:58:10.821 +03 [3516] DETAIL:  Failing row contains (mic, null, 5).
+2021-12-22 21:58:10.821 +03 [3516] STATEMENT:  INSERT INTO public.products (
+	name) VALUES (
+	'mic'::character varying)
+	 returning id;
+2021-12-22 22:03:39.644 +03 [11368] ERROR:  column "inventory" of relation "products" contains null values
+2021-12-22 22:03:39.644 +03 [11368] STATEMENT:  ALTER TABLE IF EXISTS public.products
+	    ADD COLUMN inventory integer NOT NULL;
+2021-12-22 22:27:39.402 +03 [8592] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-22 22:27:39.404 +03 [11368] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-22 22:27:39.405 +03 [11376] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-22 22:27:39.405 +03 [4448] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-22 22:27:39.406 +03 [2088] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2021-12-22 22:27:39.418 +03 [12108] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

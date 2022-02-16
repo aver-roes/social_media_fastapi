@@ -1,0 +1,6 @@
+2022-01-04 15:25:26.015 +03 [5256] LOG:  received fast shutdown request
+2022-01-04 15:25:26.212 +03 [5256] LOG:  aborting any active transactions
+2022-01-04 15:25:26.213 +03 [5908] ERROR:  canceling statement due to user request
+2022-01-04 15:25:26.424 +03 [5256] LOG:  background worker "logical replication launcher" (PID 5908) exited with exit code 1
+2022-01-04 15:25:26.424 +03 [5848] LOG:  shutting down
+2022-01-04 15:25:27.818 +03 [5256] LOG:  database system is shut down

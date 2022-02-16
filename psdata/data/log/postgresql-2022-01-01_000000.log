@@ -1,0 +1,6 @@
+2022-01-02 19:26:47.463 +03 [1268] ERROR:  canceling statement due to user request
+2022-01-02 19:26:47.463 +03 [408] ERROR:  canceling statement due to user request
+2022-01-02 19:26:47.695 +03 [5348] LOG:  aborting any active transactions
+2022-01-02 19:26:47.844 +03 [5348] LOG:  background worker "logical replication launcher" (PID 1268) exited with exit code 1
+2022-01-02 19:26:48.084 +03 [776] LOG:  shutting down
+2022-01-02 19:26:49.177 +03 [5348] LOG:  database system is shut down

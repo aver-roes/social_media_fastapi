@@ -1,0 +1,177 @@
+2022-01-15 21:14:33.232 +03 [8400] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 21:30:03.493 +03 [6352] ERROR:  column users.if does not exist at character 8
+2022-01-15 21:30:03.493 +03 [6352] HINT:  Perhaps you meant to reference the column "users.id".
+2022-01-15 21:30:03.493 +03 [6352] STATEMENT:  SELECT users.if, COUNT(*) FROM posts LEFT JOIN users ON posts.owner_id = users.id GROUP BY users.id;
+2022-01-15 21:51:59.257 +03 [6352] ERROR:  invalid reference to FROM-clause entry for table "posts" at character 24
+2022-01-15 21:51:59.257 +03 [6352] HINT:  There is an entry for table "posts", but it cannot be referenced from this part of the query.
+2022-01-15 21:51:59.257 +03 [6352] STATEMENT:  SELECT posts.id, COUNT(likes.posts.id) FROM posts LEFT JOIN likes ON posts.id = likes.post_id GROUP BY posts.id;
+2022-01-15 22:14:29.384 +03 [1408] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:15:57.784 +03 [12544] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:19:54.329 +03 [15220] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:22:17.695 +03 [12372] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:22:40.684 +03 [5360] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:22:55.674 +03 [14684] ERROR:  column "posts.id" must appear in the GROUP BY clause or be used in an aggregate function at character 8
+2022-01-15 22:22:55.674 +03 [14684] STATEMENT:  SELECT posts.id AS posts_id, posts.title AS posts_title, posts.content AS posts_content, posts.published AS posts_published, posts.created_at AS posts_created_at, posts.owner_id AS posts_owner_id, count(likes.post_id) AS num_likes 
+	FROM posts, likes 
+	WHERE (posts.title LIKE '%' || '' || '%') 
+	 LIMIT 10 OFFSET 0
+2022-01-15 22:23:57.944 +03 [14684] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:24:14.227 +03 [10876] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:25:34.865 +03 [1420] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:25:41.566 +03 [10044] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:26:05.044 +03 [8412] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:27:03.606 +03 [10504] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:28:07.606 +03 [6648] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:28:59.392 +03 [15896] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:30:03.856 +03 [5068] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:30:06.733 +03 [16380] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:30:25.595 +03 [14928] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:30:29.500 +03 [9224] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:31:20.118 +03 [7396] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:31:42.873 +03 [6912] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:32:29.176 +03 [11284] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:32:36.055 +03 [1984] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:33:43.012 +03 [12384] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:33:50.757 +03 [13904] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:34:37.852 +03 [7128] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:38:13.395 +03 [15928] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:39:45.067 +03 [16016] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:40:03.291 +03 [13052] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:40:17.432 +03 [6684] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:40:55.277 +03 [11328] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:42:17.718 +03 [14000] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:42:50.795 +03 [10264] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:43:38.339 +03 [15692] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:44:07.715 +03 [10408] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:44:15.941 +03 [10292] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:47:40.944 +03 [14724] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:48:18.708 +03 [8436] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:48:38.031 +03 [10520] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:50:11.955 +03 [9936] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:50:46.397 +03 [9892] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:52:45.386 +03 [11560] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:56:24.192 +03 [12804] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:57:14.523 +03 [6556] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:57:27.732 +03 [13780] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:57:53.421 +03 [3352] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:58:49.028 +03 [11444] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:59:12.922 +03 [15836] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 22:59:37.843 +03 [1668] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:00:35.352 +03 [13116] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:01:11.549 +03 [12372] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:01:58.609 +03 [6860] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:02:13.814 +03 [14504] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:02:43.390 +03 [9788] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:03:06.458 +03 [11824] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:04:00.438 +03 [7108] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:06:44.280 +03 [9116] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:07:33.087 +03 [8412] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:08:04.120 +03 [6372] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:08:14.609 +03 [13352] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:08:44.361 +03 [15600] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:09:39.218 +03 [11684] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:10:13.360 +03 [9728] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:10:47.419 +03 [11784] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:12:22.991 +03 [15384] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:15:32.844 +03 [15268] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:15:57.029 +03 [1652] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:17:03.672 +03 [2684] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:17:54.830 +03 [7108] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:18:26.160 +03 [9196] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:21:02.439 +03 [11444] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:21:34.495 +03 [10584] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:22:06.477 +03 [7576] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:22:25.811 +03 [4912] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:22:37.722 +03 [11316] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:23:42.793 +03 [12380] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:29:31.644 +03 [13288] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:29:35.184 +03 [10424] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:33:35.341 +03 [12028] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:35:27.797 +03 [13288] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:37:52.591 +03 [4140] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:40:03.850 +03 [7376] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:44:46.799 +03 [11968] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2022-01-15 23:44:46.799 +03 [14216] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
