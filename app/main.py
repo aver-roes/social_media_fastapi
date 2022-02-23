@@ -37,4 +37,4 @@ app.include_router(comment.router)
 
 @app.get("/")
 def root():
-    return {"message": "Welcome To Our NFT-Hub!"}
+    return {"message": "Welcome To Our NFT-Hub Folks!"}
