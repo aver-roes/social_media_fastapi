@@ -8,7 +8,7 @@ from . import config
 
 
 # NOTE: not needed since there is alembic(database migration)
-# models.Base.metadata.create_all(bind=database.engine)  # to create the tables
+models.Base.metadata.create_all(bind=database.engine)  # to create the tables
 
 
 # create the app
@@ -37,4 +37,4 @@ app.include_router(comment.router)
 
 @app.get("/")
 def root():
-    return {"message": "Welcome To Our NFT-Hub Folks!!"}
+    return {"message": "Welcome To Our NFT-Hub!"}

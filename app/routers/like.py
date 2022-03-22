@@ -28,7 +28,7 @@ def like_post(like: schemas.Like, db: Session = Depends(database.get_db), curren
     # if like is 1, then we want to check if the user has already liked the post
     if (like.dir == 1):
         if like_found:
-            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
+            raise HTTPException(status_code=status.HTTP_409_CONFLICT,
                                 detail=f'User with id:{current_user.id} already liked post with id:{like.post_id}')
         # if the user has not liked the post, then we can add the like
         new_like = models.Like(user_id=current_user.id, post_id=like.post_id)
@@ -39,7 +39,7 @@ def like_post(like: schemas.Like, db: Session = Depends(database.get_db), curren
     # if like is 0, then we want to check if the user has already unliked the post
     elif (like.dir == 0):
         if not like_found:
-            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
+            raise HTTPException(status_code=status.HTTP_409_CONFLICT,
                                 detail=f'User with id:{current_user.id} has not liked post with id:{like.post_id}')
         # if the user has already liked the post, then we can remove the like
         like_query.delete(synchronize_session=False)
@@ -47,5 +47,5 @@ def like_post(like: schemas.Like, db: Session = Depends(database.get_db), curren
         return{"message": "Post unliked"}
 
     else:
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT,
                             detail=f'Invalid like direction it should be 1 or 0')

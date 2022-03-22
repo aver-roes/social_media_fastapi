@@ -87,12 +87,12 @@ class PostResponse(Post):
 
 # comment response schema
 class CommentResponse(BaseModel):
-    id: Optional[int]
-    content: Optional[str]
-    created_at: Optional[datetime]
-    com_owner_id: Optional[int]
-    com_post_id: Optional[int]
-    com_owner: UserResponse
+    id: int
+    content: str
+    created_at: datetime
+    com_owner_id: int
+    com_post_id: int
+    com_owner: Optional[UserResponse]  # NOTE: use optional just for testing
 
     class Config:
         orm_mode = True
