@@ -8,5 +8,11 @@ jobs:
     steps:
       - name: pulling git repo
         uses: actions/checkout@v3
-      - name: leaning cicd
-        run: echo "hello ci/cd"
+      - name: install python version 3.9
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+      - name: update pip
+        run: python -m pip install --upgrade pip
+      - name: installing all dependencies
+        run: pip install -r requirements.txt
