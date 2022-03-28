@@ -31,13 +31,17 @@ pip install -r requirements.txt
 uvicorn app.main:app
 ```
 
-<p>3. To Tests with pytest</p>
+<p>3. To Test the app with pytest</p>
 
 ```
 pip install pytest
 ```
 
 <p>4. Run the test</p>
+
+```
+pytest
+```
 
   
   
