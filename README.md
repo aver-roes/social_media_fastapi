@@ -2,6 +2,10 @@
 
 <p align="center"><img src="https://socialify.git.ci/Alihassoon93/social_media_fastapi/image?description=1&amp;font=Bitter&amp;language=1&amp;logo=https%3A%2F%2Ffastapi.tiangolo.com%2Fimg%2Flogo-margin%2Flogo-teal.png&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;theme=Dark" alt="project-image"></p>
 
+<h2>🚀 Demo</h2>
+
+[https://social-media-fastapi-backend.herokuapp.com/docs](https://social-media-fastapi-backend.herokuapp.com/docs)
+
   
   
 <h2>🧐 Features</h2>
@@ -14,8 +18,9 @@ Here're some of the project's best features:
 *   LIKES CRUD
 *   JWT Authentication
 *   TESTING using pytest
-*   CI/CD Pipeline using Github Actions
+*   DOCKERIZED
 *   Deployed on Heroku
+*   CI/CD Pipeline using Github Actions
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -53,5 +58,6 @@ Technologies used in the project:
 *   Fastapi
 *   PostgresSQL
 *   Alembic
-*   CI/CD Github Actions
+*   Docker
 *   Heroku
+*   CI/CD Github Actions
