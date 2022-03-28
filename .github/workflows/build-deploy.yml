@@ -1,0 +1,12 @@
+name: Build and Deploy Code
+
+on: [push, pull_request]
+
+jobs:
+  bulid:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling git repo
+        uses: actions/checkout@v3
+      - name: leaning cicd
+        run: echo "hello ci/cd"
